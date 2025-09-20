@@ -13,7 +13,7 @@ export default function Exist() {
                         Why do we <span className="text-[#CB8461]">exist?</span>
                     </h1>
 
-                    <p className="mt-4 text-gray-600 text-sm leading-6 w-full md:w-auto">
+                    <p className="mt-4  text-gray-600 text-sm leading-6 w-full md:w-auto">
                         Our mission is to make learning easy, accessible, and effective for everyone. Many people struggle to improve their skills due to outdated
                     </p>
 

@@ -3,7 +3,7 @@ import { FaInstagram, FaTwitter, FaDiscord, FaCalendarAlt, FaPen, FaPlay } from 
 
 export default function Banner() {
     return (
-        <div className="bg-[#245D51] relative overflow-hidden">
+        <div className="bg-[#245D51] relative overflow-hidden ">
             <div className="max-w-7xl mx-auto ">
 
                 {/* Desktop Hero */}
@@ -76,9 +76,9 @@ export default function Banner() {
                     </div>
                 </div>
 
+               
                 {/* Mobile Hero */}
-                {/* Mobile Hero */}
-                <div className="sm:hidden bg-[#245D51] relative overflow-hidden px-4 py-16">
+                <div className="sm:hidden bg-[#245D51] relative overflow-hidden px-4 py-16 mt-12">
 
                     {/* Floating Icons */}
                     <div className="absolute top-8 right- w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-lg -rotate-12 shadow-lg">

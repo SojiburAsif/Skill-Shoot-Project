@@ -75,10 +75,11 @@ export default function PopularCourses() {
                 </p>
             </div>
 
-            <div className="absolute  top-15 left-20 w-10 h-10 bg-[#CB8461] rotate-12"></div>
-            <div className="absolute top-17 left-17 w-10 h-10  border-2 border-[#CB8461] rotate-12"></div>
-            <div className="absolute top-24 right-20 rounded-full w-5 h-5 bg-[#EB9F79]"></div>
-            <div className="absolute top-21 right-21 rounded-full w-7 h-7 bg-[#e28252]"></div>
+            <div className="absolute top-15 left-20 w-10 h-10 bg-[#CB8461] rotate-12 hidden md:block"></div>
+            <div className="absolute top-17 left-17 w-10 h-10 border-2 border-[#CB8461] rotate-12 hidden md:block"></div>
+            <div className="absolute top-24 right-20 rounded-full w-5 h-5 bg-[#EB9F79] hidden md:block"></div>
+            <div className="absolute top-21 right-21 rounded-full w-7 h-7 bg-[#e28252] hidden md:block"></div>
+
 
             {/* Swiper */}
             <div className="relative max-w-7xl mx-auto px-6">

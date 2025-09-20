@@ -8,6 +8,8 @@ import Improve from './Components/Improve'
 import Popular from './Components/Popular'
 import SkillShoot from './Components/SkillShoot'
 
+import Page from './Components/Review'
+
 export default function page() {
   return (
     <div>
@@ -19,6 +21,7 @@ export default function page() {
       <SkillShoot></SkillShoot>
       <Improve></Improve>
       <Subscribe></Subscribe>
+       <Page></Page>
     </div>
   )
 }

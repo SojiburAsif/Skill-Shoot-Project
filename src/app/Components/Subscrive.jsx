@@ -35,11 +35,11 @@ export default function Subscribe() {
                         $100 <span className="text-sm font-normal">/ 6 month</span>
                     </h1>
                     <h2 className="mt-3 text-lg md:text-xl font-semibold">Pro</h2>
-                    <p className="mt-2 text-gray-200 text-sm md:text-base">
+                    <p className="mt-2 text-gray-200 text-sm md:text-base leading-7 sm:leading-7">
                         Lorem Ipsum is simply dummy text of the printing.
                     </p>
 
-                    <ul className="mt-6 space-y-3 text-gray-100 text-sm md:text-base">
+                    <ul className="mt-6 space-y-5 text-gray-100 text-sm md:text-base">
                         <li className="flex items-center"><Icon className="text-white" /> Access all videos</li>
                         <li className="flex items-center"><Icon className="text-white" /> Get Certificate</li>
                         <li className="flex items-center"><Icon className="text-white" /> Chat support</li>
@@ -53,16 +53,16 @@ export default function Subscribe() {
                 </div>
 
                 {/* Base Plan (left → show second on mobile) */}
-                <div className="order-2 md:order-1 flex flex-col items-start text-left bg-white rounded-2xl p-6 w-full sm:w-80 md:w-72 h-auto min-h-[480px] transition duration-300">
+                <div className="order-2 md:order-1 flex flex-col items-start text-left bg-white rounded-2xl p-6 w-full sm:w-70 md:w-72 h-auto min-h-[480px] transition duration-300">
                     <h1 className="text-2xl md:text-3xl font-bold">
                         $50 <span className="text-sm font-normal">/ 1 month</span>
                     </h1>
                     <h2 className="mt-3 text-lg md:text-xl font-semibold">Base</h2>
-                    <p className="mt-2 text-gray-400 text-sm md:text-base">
+                    <p className="mt-2 text-gray-400 text-sm md:text-base leading-7">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
 
-                    <ul className="mt-6 space-y-3 text-gray-700 text-sm md:text-base">
+                    <ul className="mt-6 space-y-5 text-gray-700 text-sm md:text-base">
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Access all videos</li>
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Get Certificate</li>
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Chat support</li>
@@ -81,11 +81,11 @@ export default function Subscribe() {
                         $200 <span className="text-sm font-normal">/ 12 month</span>
                     </h1>
                     <h2 className="mt-3 text-lg md:text-xl font-semibold">Enterprise</h2>
-                    <p className="mt-2 text-gray-400 text-sm md:text-base">
+                    <p className="mt-2 text-gray-400 text-sm md:text-base leading-7">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
 
-                    <ul className="mt-6 space-y-3 text-gray-700 text-sm md:text-base">
+                    <ul className="mt-6 space-y-5 text-gray-700 text-sm md:text-base">
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Access all videos</li>
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Get Certificate</li>
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Chat support</li>
