@@ -4,6 +4,9 @@ import Company from './Components/Company'
 import Offers from './Components/Offers'
 import Exist from './Components/Exist'
 import Subscribe from './Components/Subscrive'
+import Improve from './Components/Improve'
+import Popular from './Components/Popular'
+import SkillShoot from './Components/SkillShoot'
 
 export default function page() {
   return (
@@ -12,6 +15,9 @@ export default function page() {
       <Company></Company>
       <Offers></Offers>
       <Exist></Exist>
+      <Popular></Popular>
+      <SkillShoot></SkillShoot>
+      <Improve></Improve>
       <Subscribe></Subscribe>
     </div>
   )
