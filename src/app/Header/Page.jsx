@@ -12,7 +12,7 @@ export default function Header() {
         pathname === path ? "text-white font-semibold" : "text-gray-300"
 
     return (
-        <div className="shadow-sm bg-[#245D51]">
+        <div className=" bg-[#245D51] fixed z-50 w-full">
             <div className="max-w-7xl mx-auto navbar">
                 {/* Navbar Start */}
                 <div className="navbar-start">

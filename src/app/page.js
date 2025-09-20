@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from './Components/Hero'
 import Company from './Components/Company'
 import Offers from './Components/Offers'
+import Exist from './Components/Exist'
 
 export default function page() {
   return (
@@ -9,6 +10,7 @@ export default function page() {
       <Banner></Banner>
       <Company></Company>
       <Offers></Offers>
+      <Exist></Exist>
     </div>
   )
 }
