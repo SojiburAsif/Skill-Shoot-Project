@@ -7,7 +7,7 @@ export default function Banner() {
             <div className="max-w-7xl mx-auto ">
 
                 {/* Desktop Hero */}
-                <div className="flex flex-col-reverse lg:flex-row items-center justify-between pt-28 lg:pt-10 gap-10 hidden sm:flex ">
+                <div className="flex  flex-col-reverse lg:flex-row items-center justify-between pt-28 lg:pt-10 gap-10 hidden sm:flex ">
 
                     {/* Left Content */}
                     <div className="text-left max-w-xl">
