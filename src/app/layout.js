@@ -1,10 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./Header/Page";
+import Footer from "./Fooder/page";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
+  variable: "--font-sans",
   subsets: ["latin"],
 });
+
+
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -18,11 +22,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" datatheme="light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#286054]`}
       >
+        <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
