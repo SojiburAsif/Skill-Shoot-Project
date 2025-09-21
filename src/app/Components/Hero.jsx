@@ -19,10 +19,15 @@ export default function Banner() {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-white text-4xl md:text-6xl font-bold leading-snug">
-                            There is <span className="text-white relative">
+                            There is <span className="relative text-white inline-block">
                                 always
-                                <span className="absolute left-0 -bottom-1 w-full h-[4px] bg-orange-300 rounded-full"></span>
+                                <img
+                                    src="https://i.ibb.co.com/BHFNfFzH/Vector-1.png"
+                                    alt=""
+                                    className="absolute -bottom-3 left-0 w-full "
+                                />
                             </span>
+
                             <br /> something new for us to learn
                         </h1>
                         <p className="text-gray-200 mt-6 w-110 leading-relaxed">
