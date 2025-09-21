@@ -9,7 +9,7 @@ export default function Banner() {
             <div className="max-w-7xl mx-auto ">
 
                 {/* Desktop Hero */}
-                <div className="flex flex-col-reverse lg:flex-row items-center justify-between pt-28 lg:pt-10 gap-10 hidden sm:flex ">
+                <div className="flex flex-col-reverse lg:flex-row items-center h-[677px] justify-between pt-28 lg:pt-10 gap-10 hidden sm:flex ">
 
                     {/* Left Content */}
                     <motion.div
@@ -18,7 +18,7 @@ export default function Banner() {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="text-white text-4xl md:text-6xl font-bold leading-snug">
+                        <h1 className="text-white text-4xl md:text-5xl font-bold leading-snug">
                             There is <span className="relative text-white inline-block">
                                 always
                                 <img
