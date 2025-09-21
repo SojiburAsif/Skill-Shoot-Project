@@ -93,7 +93,7 @@ root/
 ## 💻 Run Locally
 
 1. **Clone the repository**
-
+```bash
 
   https://github.com/SojiburAsif/Skill-Shoot-Project/ 
 
