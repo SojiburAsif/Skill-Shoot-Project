@@ -143,9 +143,7 @@ npm run start
 ---
 
 
-![Homepage](./public/screenshot-home.png)
-![Reviews](./public/screenshot-reviews.png)
-```
+
 
 ---
 
@@ -163,6 +161,7 @@ PRs are welcome:
 ## 📬 Contact
 
 Created by **Sojibur Rahman Asif** — feel free to reach out via GitHub profile.
+Email: asif81534@gmail.com
 
 ---
 
