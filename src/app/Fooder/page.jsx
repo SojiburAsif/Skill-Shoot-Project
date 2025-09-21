@@ -77,22 +77,22 @@ export default function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/course" className={navClass("/course")}>
+                            <Link href="#course" className={navClass("/course")}>
                                 Course
                             </Link>
                         </li>
                         <li>
-                            <Link href="/subscribe" className={navClass("/subscribe")}>
+                            <Link href="#subscribe" className={navClass("/subscribe")}>
                                 Subscribe
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about" className={navClass("/about")}>
+                            <Link href="#about" className={navClass("/about")}>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="/testimoni" className={navClass("/testimoni")}>
+                            <Link href="#testimoni" className={navClass("/testimoni")}>
                                 Testimoni
                             </Link>
                         </li>
