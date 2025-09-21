@@ -22,7 +22,7 @@ export default function Improve() {
                     </h1>
                 </div>
 
-                {/* Buttons */}
+               
                 <div className="flex flex-col sm:flex-row items-center gap-4 mt-6 md:mt-0">
                     <button className="py-3 px-6 rounded-md bg-[#CB8461] text-white font-semibold w-full sm:w-auto">
                         Join Now
