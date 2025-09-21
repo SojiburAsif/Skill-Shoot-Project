@@ -3,7 +3,7 @@ import React from "react";
 export default function Offers() {
   return (
     <div className="bg-white py-6 md:mt-33 mx-4 md:mx-0">
-      {/* ✅ Desktop/Tablet Section (unchanged) */}
+    
       <div className="hidden md:flex max-w-7xl mx-auto max-h-[300px]  bg-[#F2E7DB] rounded-2xl flex-col md:flex-row items-center justify-between px-8 relative  ">
         {/* Decorative Shapes */}
         <div className="absolute top-0 left-0 w-14 h-14 bg-[#245D51] rounded-full rounded-t-2xl rounded-l-4xl"></div>
@@ -46,7 +46,7 @@ export default function Offers() {
         </div>
       </div>
 
-      {/* ✅ Mobile Section (only text, no image) */}
+      {/*  Mobile Section  */}
       <div className="md:hidden max-w-7xl mx-auto bg-[#F2E7DB] h-[300px] rounded-2xl px-6 py-10 text-center space-y-5 relative">
 
         <div className="absolute top-0 left-0 w-10 h-10 bg-[#245D51] rounded-full rounded-t-2xl rounded-l-4xl"></div>

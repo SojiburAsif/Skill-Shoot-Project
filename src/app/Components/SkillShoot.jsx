@@ -63,7 +63,7 @@ export default function SkillShoot() {
                 </div>
 
 
-                {/* RIGHT - text area (50%) */}
+             
                 <div className="w-full md:w-1/2 max-w-xl">
                     <h1 className="text-4xl font-bold">
                         Let us <span className="text-[#245D51] underline">Skill Shoot </span>

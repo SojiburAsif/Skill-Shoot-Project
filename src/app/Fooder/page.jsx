@@ -14,8 +14,8 @@ export default function Footer() {
 
     return (
         <footer className="relative bg-[#286054] text-white py-16 overflow-hidden">
-            {/* Decorative*/}
-            {/* Decorative Elements */}
+    
+          
             <img
                 src="https://i.ibb.co.com/HDwbC6w0/Vector-15.png"
                 alt="Decoration"
@@ -26,7 +26,7 @@ export default function Footer() {
 
             <div className="hidden sm:block absolute top-[145px] right-[535px] border-[3px] rounded-full w-10 h-10 border-[#e28252]"></div>
 
-            {/* Decorative Elements - Show Only on Mobile/Tablet */}
+      
             <img
                 src="https://i.ibb.co.com/HDwbC6w0/Vector-15.png"
                 alt="Decoration"
