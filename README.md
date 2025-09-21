@@ -94,8 +94,8 @@ root/
 
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/SojiburAsif/Skill-Shoot-Project/
+
+  https://github.com/SojiburAsif/Skill-Shoot-Project/ 
 
 ```
 
