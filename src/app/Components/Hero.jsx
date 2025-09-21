@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import { FaInstagram, FaTwitter, FaDiscord, FaCalendarAlt, FaPen, FaPlay } from "react-icons/fa";
 
 export default function Banner() {
@@ -7,10 +9,15 @@ export default function Banner() {
             <div className="max-w-7xl mx-auto ">
 
                 {/* Desktop Hero */}
-                <div className="flex  flex-col-reverse lg:flex-row items-center justify-between pt-28 lg:pt-10 gap-10 hidden sm:flex ">
+                <div className="flex flex-col-reverse lg:flex-row items-center justify-between pt-28 lg:pt-10 gap-10 hidden sm:flex ">
 
                     {/* Left Content */}
-                    <div className="text-left max-w-xl">
+                    <motion.div
+                        className="text-left max-w-xl"
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+                    >
                         <h1 className="text-white text-4xl md:text-6xl font-bold leading-snug">
                             There is <span className="text-white relative">
                                 always
@@ -25,7 +32,12 @@ export default function Banner() {
                         </p>
 
                         {/* Button + Social */}
-                        <div className="flex items-center gap-6 mt-8">
+                        <motion.div
+                            className="flex items-center gap-6 mt-8"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5, duration: 0.8 }}
+                        >
                             <button className="bg-[#CB8461] hover:bg-[#e67a5d] transition px-6 py-3 rounded-lg font-semibold text-white shadow-md flex items-center gap-2">
                                 Start Journey ↗
                             </button>
@@ -34,21 +46,32 @@ export default function Banner() {
                                 <FaTwitter />
                                 <FaDiscord />
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     {/* Right Person Image */}
-                    <div className="relative">
-                        <div className="">
-                            <img
-                                src="https://i.ibb.co.com/67kHKb5C/1be971d51ac590eb01300a0a71a30015d938c6d1-1.png"
-                                alt="Mentor"
-                                className="w-[400px] lg:w-[460px] drop-shadow-2xl"
-                            />
-                        </div>
+                    <motion.div
+                        className="relative"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1 }}
+                    >
+                        <motion.img
+                            src="https://i.ibb.co.com/67kHKb5C/1be971d51ac590eb01300a0a71a30015d938c6d1-1.png"
+                            alt="Mentor"
+                            className="w-[400px] lg:w-[460px] drop-shadow-2xl"
+                            initial={{ y: 50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.3 }}
+                        />
 
                         {/* Floating Card */}
-                        <div className="absolute  bg-white/70 backdrop-blur-md  -left-35 bottom-54 bg-t px-4 py-2 rounded-xl shadow-lg flex flex-col items-center ">
+                        <motion.div
+                            className="absolute bg-white/70 backdrop-blur-md -left-35 bottom-54 px-4 py-2 rounded-xl shadow-lg flex flex-col items-center"
+                            initial={{ y: 50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 0.8, duration: 0.8 }}
+                        >
                             <div className="flex gap-3 px-2 py-2">
                                 <img
                                     src="https://i.pravatar.cc/40"
@@ -62,47 +85,77 @@ export default function Banner() {
                                     <p className="text-xs text-gray-500">Today at 12 PM</p>
                                 </div>
                             </div>
-
-                            <button className="bg-[#FF4F8E] text-white font-semibold px-3 py-2 rounded-md">
+                            <button className="bg-[#FF4F8E] text-white font-semibold px-3 py-2 rounded-md hover:bg-pink-600">
                                 Join Now
                             </button>
-                        </div>
-
+                        </motion.div>
 
                         {/* Floating Icons */}
-                        <div className="absolute top-34 right-95 w-10 h-10 bg-orange-400  text-white flex items-center justify-center rounded-lg -rotate-12 shadow-lg"><FaPen /></div>
-                        <div className="absolute top-65 right-14 w-10 h-10 bg-[#7252A4] text-white flex items-center justify-center rounded-lg shadow-lg rotate-4"><FaPlay /></div>
-                        <div className="absolute bottom-15 right-6 w-10 h-10 bg-[#23BDEE] text-white flex items-center justify-center rounded-lg shadow-lg -rotate-12"><FaCalendarAlt /></div>
-                    </div>
+                        <motion.div
+                            className="absolute top-34 right-95 w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-lg -rotate-12 shadow-lg"
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{ repeat: Infinity, duration: 2 }}
+                        >
+                            <FaPen />
+                        </motion.div>
+                        <motion.div
+                            className="absolute top-65 right-14 w-10 h-10 bg-[#7252A4] text-white flex items-center justify-center rounded-lg shadow-lg rotate-4"
+                            animate={{ y: [0, 10, 0] }}
+                            transition={{ repeat: Infinity, duration: 2 }}
+                        >
+                            <FaPlay />
+                        </motion.div>
+                        <motion.div
+                            className="absolute bottom-15 right-6 w-10 h-10 bg-[#23BDEE] text-white flex items-center justify-center rounded-lg shadow-lg -rotate-12"
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{ repeat: Infinity, duration: 2, delay: 1 }}
+                        >
+                            <FaCalendarAlt />
+                        </motion.div>
+                    </motion.div>
                 </div>
 
-               
                 {/* Mobile Hero */}
                 <div className="sm:hidden bg-[#245D51] relative overflow-hidden px-4 py-16 mt-12">
-
                     {/* Floating Icons */}
-                    <div className="absolute top-8 right- w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-lg -rotate-12 shadow-lg">
+                    <motion.div
+                        className="absolute top-8 w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-lg -rotate-12 shadow-lg"
+                        animate={{ y: [0, -10, 0] }}
+                        transition={{ repeat: Infinity, duration: 2 }}
+                    >
                         <FaPen />
-                    </div>
-                    <div className="absolute bottom-5 right-3 w-10 h-10 bg-[#7252A4] text-white flex items-center justify-center rounded-lg shadow-lg rotate-4">
+                    </motion.div>
+                    <motion.div
+                        className="absolute bottom-5 right-3 w-10 h-10 bg-[#7252A4] text-white flex items-center justify-center rounded-lg shadow-lg rotate-4"
+                        animate={{ y: [0, 10, 0] }}
+                        transition={{ repeat: Infinity, duration: 2 }}
+                    >
                         <FaPlay />
-                    </div>
-                    <div className="absolute bottom-28 right w-10 h-10 bg-[#23BDEE] text-white flex items-center justify-center rounded-lg shadow-lg -rotate-12">
+                    </motion.div>
+                    <motion.div
+                        className="absolute bottom-28 w-10 h-10 bg-[#23BDEE] text-white flex items-center justify-center rounded-lg shadow-lg -rotate-12"
+                        animate={{ y: [0, -10, 0] }}
+                        transition={{ repeat: Infinity, duration: 2, delay: 1 }}
+                    >
                         <FaCalendarAlt />
-                    </div>
+                    </motion.div>
 
-                    <div className="flex flex-col items-center gap-6">
-
+                    <motion.div
+                        className="flex flex-col items-center gap-6"
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
                         {/* Left Content */}
                         <div className="text-center">
                             <h1 className="text-white text-3xl font-bold leading-snug relative">
                                 There is <span className="text-white relative">
                                     always
-                                    <span className="absolute left-0 -bottom-1 w-full h-[3px]  bg-orange-300 rounded-full"></span>
+                                    <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-orange-300 rounded-full"></span>
                                 </span>
                                 <br /> something new for us to learn
                             </h1>
-                            <p className="text-gray-200 mt-4  leading-relaxed max-w-[450px] mx-auto">
+                            <p className="text-gray-200 mt-4 leading-relaxed max-w-[450px] mx-auto">
                                 we have created more than 100+ materials on various things that will help your career, with mentors who are experienced in their fields.
                             </p>
 
@@ -118,11 +171,8 @@ export default function Banner() {
                                 </div>
                             </div>
                         </div>
-
-                    </div>
+                    </motion.div>
                 </div>
-
-
             </div>
         </div>
     );
