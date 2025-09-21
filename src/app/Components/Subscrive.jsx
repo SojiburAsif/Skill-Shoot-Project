@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { RiVerifiedBadgeLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 export default function Subscribe() {
     const Icon = ({ className = "" }) => (
@@ -10,24 +11,55 @@ export default function Subscribe() {
         />
     );
 
+    const cardVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0 },
+    };
+
     return (
-        <div className="bg-white py-16">
+        <motion.div
+            className="bg-white py-16"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+        >
             <div className="text-center px-4 ">
-                <h1 className="text-2xl md:text-4xl font-semibold">
+                <motion.h1
+                    className="text-2xl md:text-4xl font-semibold"
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                >
                     <span className="text-[#CB8461]">Subscribe</span> with us now
-                </h1>
-                <p className="text-gray-400 mt-3 max-w-xl mx-auto text-sm md:text-base">
+                </motion.h1>
+                <motion.p
+                    className="text-gray-400 mt-3 max-w-xl mx-auto text-sm md:text-base"
+                    initial={{ opacity: 0, y: -10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
                     By subscribing now you will be able to access the material easily and cheaply,
                     so you will be very efficient and benefit.
-                </p>
+                </motion.p>
             </div>
 
             {/* Cards Section */}
-            <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 mt-20 px-14 md:px-6">
-
-                {/* Pro Plan (middle, highlighted → show first on mobile) */}
-                <div className="order-1 md:order-2 relative flex flex-col items-start text-left bg-[#245D51] text-white shadow-[#779d76] shadow-lg rounded-3xl p-8 w-full sm:w-96 md:w-80 h-auto min-h-[400px] transform transition duration-300 -translate-y-9 hover:-translate-y-12 hover:shadow-green-700">
-                    <span className="  absolute left-1/2  top-2 bg-[#CB8461] text-white text-xs px-4 py-1 rounded-full">
+            <motion.div
+                className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 mt-20 px-14 md:px-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ staggerChildren: 0.2 }}
+            >
+                {/* Pro Plan */}
+                <motion.div
+                    className="order-1 md:order-2 relative flex flex-col items-start text-left bg-[#245D51] text-white shadow-[#779d76] shadow-lg rounded-3xl p-8 w-full sm:w-96 md:w-80 h-auto min-h-[400px] transform transition duration-300 hover:-translate-y-12 hover:shadow-green-700"
+                    variants={cardVariants}
+                >
+                    <span className="absolute left-1/2 top-2 bg-[#CB8461] text-white text-xs px-4 py-1 rounded-full">
                         MOST POPULAR
                     </span>
 
@@ -47,13 +79,20 @@ export default function Subscribe() {
                         <li className="flex items-center"><Icon className="text-white" /> Download material</li>
                     </ul>
 
-                    <button className="mt-6 w-full px-6 py-3 rounded-3xl bg-[#CB8461] text-white font-semibold hover:bg-[#ff9c7c] transition">
+                    <motion.button
+                        className="mt-6 w-full px-6 py-3 rounded-3xl bg-[#CB8461] text-white font-semibold hover:bg-[#ff9c7c] transition"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
                         Choose plan
-                    </button>
-                </div>
+                    </motion.button>
+                </motion.div>
 
-                {/* Base Plan (left → show second on mobile) */}
-                <div className="order-2 md:order-1 flex flex-col items-start text-left bg-white rounded-2xl p-6 w-full sm:w-70 md:w-72 h-auto min-h-[480px] transition duration-300 px-14 md:px-6">
+                {/* Base Plan */}
+                <motion.div
+                    className="order-2 md:order-1 flex flex-col items-start text-left bg-white rounded-2xl p-6 w-full sm:w-70 md:w-72 h-auto min-h-[480px] transition duration-300 px-14 md:px-6"
+                    variants={cardVariants}
+                >
                     <h1 className="text-2xl md:text-3xl font-bold">
                         $50 <span className="text-sm font-normal">/ 1 month</span>
                     </h1>
@@ -70,13 +109,20 @@ export default function Subscribe() {
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Download material</li>
                     </ul>
 
-                    <button className="mt-6 w-full px-6 py-2 rounded-3xl bg-[#ffede5] text-[#FDC2A5] font-semibold hover:bg-[#FDC2A5] hover:text-white transition">
+                    <motion.button
+                        className="mt-6 w-full px-6 py-2 rounded-3xl bg-[#ffede5] text-[#FDC2A5] font-semibold hover:bg-[#FDC2A5] hover:text-white transition"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
                         Choose plan
-                    </button>
-                </div>
+                    </motion.button>
+                </motion.div>
 
-                {/* Enterprise Plan (right → show last on mobile) */}
-                <div className="order-3 md:order-3 flex flex-col items-start text-left bg-white rounded-2xl p-6 w-full sm:w-80 md:w-72 h-auto min-h-[480px] transition duration-300 px-14 md:px-6">
+                {/* Enterprise Plan */}
+                <motion.div
+                    className="order-3 md:order-3 flex flex-col items-start text-left bg-white rounded-2xl p-6 w-full sm:w-80 md:w-72 h-auto min-h-[480px] transition duration-300 px-14 md:px-6"
+                    variants={cardVariants}
+                >
                     <h1 className="text-2xl md:text-3xl font-bold">
                         $200 <span className="text-sm font-normal">/ 12 month</span>
                     </h1>
@@ -93,12 +139,16 @@ export default function Subscribe() {
                         <li className="flex items-center"><Icon className="text-[#CB8461]" /> Download material</li>
                     </ul>
 
-                    <button className="mt-6 w-full px-6 py-2 rounded-3xl bg-[#ffede5] text-[#FDC2A5] font-semibold hover:bg-[#FDC2A5] hover:text-white transition">
+                    <motion.button
+                        className="mt-6 w-full px-6 py-2 rounded-3xl bg-[#ffede5] text-[#FDC2A5] font-semibold hover:bg-[#FDC2A5] hover:text-white transition"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
                         Choose plan
-                    </button>
-                </div>
+                    </motion.button>
+                </motion.div>
 
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 }
