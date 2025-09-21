@@ -15,7 +15,7 @@ const cardVariants = {
 
 export default function Exist() {
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white py-16" id="about">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10 px-4">
 
         {/* Left Section */}

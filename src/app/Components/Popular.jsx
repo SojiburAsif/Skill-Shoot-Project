@@ -55,6 +55,7 @@ export default function PopularCourses() {
     <div className="bg-[#245D51] relative overflow-visible py-16">
       {/* Section Header */}
       <motion.div
+      id="course"
         className="text-center mb-12 px-6"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}

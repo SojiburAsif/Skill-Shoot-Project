@@ -26,17 +26,17 @@ export default function Header() {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-lg">
                         <li><Link href="/" className={navClass("/")}>Home</Link></li>
-                        <li><Link href="/course" className={navClass("/course")}>Course</Link></li>
-                        <li><Link href="/subscribe" className={navClass("/subscribe")}>Subscribe</Link></li>
-                        <li><Link href="/about" className={navClass("/about")}>About</Link></li>
-                        <li><Link href="/testimoni" className={navClass("/testimoni")}>Testimoni</Link></li>
+                        <li><Link href="#course" className={navClass("/course")}>Course</Link></li>
+                        <li><Link href="#subscribe" className={navClass("/subscribe")}>Subscribe</Link></li>
+                        <li><Link href="#about" className={navClass("/about")}>About</Link></li>
+                        <li><Link href="#testimoni" className={navClass("/testimoni")}>Testimoni</Link></li>
                     </ul>
 
                 </div>
 
                 {/* Navbar End (Desktop Login/Register) */}
                 <div className="navbar-end hidden lg:flex gap-4">
-                    <Link href="/login" className="text-gray-50 text-sm hover:text-white">Login</Link>
+                    <Link href="#subscribe" className="text-gray-50 text-sm hover:text-white">Login</Link>
                     <Link href="/register" className="px-5 py-1.5 rounded hover:rounded-full bg-[#CB8461] text-white">Register</Link>
                 </div>
 
@@ -50,10 +50,10 @@ export default function Header() {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-black text-white rounded-box mt-3 w-52 p-2 shadow z-10">
                             <li><Link href="/" className={navClass("/")}>Home</Link></li>
-                            <li><Link href="/course" className={navClass("/course")}>Course</Link></li>
-                            <li><Link href="/subscribe" className={navClass("/subscribe")}>Subscribe</Link></li>
-                            <li><Link href="/about" className={navClass("/about")}>About</Link></li>
-                            <li><Link href="/testimoni" className={navClass("/testimoni")}>Testimoni</Link></li>
+                            <li><Link href="#course" className={navClass("/course")}>Course</Link></li>
+                            <li><Link href="#subscribe" className={navClass("/subscribe")}>Subscribe</Link></li>
+                            <li><Link href="#about" className={navClass("/about")}>About</Link></li>
+                            <li><Link href="#testimoni" className={navClass("/testimoni")}>Testimoni</Link></li>
                             <li><Link href="/login" className="text-gray-100 hover:text-black">Login</Link></li>
                             <li><Link href="/register" className="text-gray-100 hover:text-black">Register</Link></li>
                         </ul>

@@ -30,6 +30,7 @@ export default function SkillShoot() {
 
         {/* LEFT - image area */}
         <motion.div
+        id="testimoni"
           className="relative w-full md:w-1/2 hidden md:flex justify-center items-end"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}

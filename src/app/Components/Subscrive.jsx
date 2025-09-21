@@ -18,6 +18,7 @@ export default function Subscribe() {
 
     return (
         <motion.div
+            id="subscribe"
             className="bg-white py-16"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
