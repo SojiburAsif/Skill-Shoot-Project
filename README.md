@@ -95,8 +95,8 @@ root/
 1. **Clone the repository**
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone [<your-repo-url>](https://github.com/SojiburAsif/Skill-Shoot-Project/)
+
 ```
 
 2. **Install dependencies**
