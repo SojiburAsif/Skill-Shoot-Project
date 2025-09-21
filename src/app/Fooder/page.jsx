@@ -13,20 +13,20 @@ export default function Footer() {
             : "text-gray-100 hover:text-[#CC8663] transition";
 
     return (
-        <footer className="relative bg-[#286054] text-white py-16 overflow-hidden">
-    
-          
+        <footer className="relative bg-[#286054] text-white py-8 overflow-hidden">
+
+
             <img
                 src="https://i.ibb.co.com/HDwbC6w0/Vector-15.png"
                 alt="Decoration"
-                className="hidden sm:block absolute top-[247px] left-[440px] w-[68px] h-[48px] opacity-80 pointer-events-none"
+                className="hidden sm:block absolute top-[217px] left-[310px] w-[68px] h-[48px] opacity-80 pointer-events-none"
             />
 
-            <div className="hidden sm:block absolute top-[160px] right-[520px] border rounded-full w-10 h-10 border-[#EB9F79]"></div>
+            <div className="hidden sm:block absolute top-[160px] right-[320px] border rounded-full w-10 h-10 border-[#EB9F79]"></div>
 
-            <div className="hidden sm:block absolute top-[145px] right-[535px] border-[3px] rounded-full w-10 h-10 border-[#e28252]"></div>
+            <div className="hidden sm:block absolute top-[145px] right-[335px] border-[3px] rounded-full w-10 h-10 border-[#e28252]"></div>
 
-      
+
             <img
                 src="https://i.ibb.co.com/HDwbC6w0/Vector-15.png"
                 alt="Decoration"

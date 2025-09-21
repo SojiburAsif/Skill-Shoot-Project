@@ -49,7 +49,7 @@ export default function Subscribe() {
 
             {/* Cards Section */}
             <motion.div
-                className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 mt-20 px-14 md:px-6"
+                className="flex flex-col md:flex-row justify-center  items-center md:items-start gap-8 md:gap-12 mt-20 px-14 md:px-6"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
