@@ -45,8 +45,6 @@ export default function SkillShoot() {
             alt="mentor"
             className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[280px] md:w-[380px] object-contain z-20"
           />
-
-          {/* floating icons */}
           <motion.div
             className="absolute top-8 md:top-29 -left-26 md:left-23 w-10 h-10 bg-[#4B9EFF] text-white flex items-center justify-center rounded-lg shadow-lg z-30 -rotate-12"
             variants={floatVariants}
