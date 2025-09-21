@@ -1,36 +1,185 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Skill Shoot
 
-## Getting Started
+[Live Demo](https://skill-shoot-project.vercel.app/) • *Deployed on Vercel*
 
-First, run the development server:
+---
+
+[![Deployment](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge\&logo=vercel)](https://skill-shoot-project.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat-square\&logo=next.js)](#)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square\&logo=tailwindcss)](#)
+[![Swiper](https://img.shields.io/badge/Swiper-Carousel-007ACC?style=flat-square)](#)
+[![React Icons](https://img.shields.io/badge/React--Icons-20232A?style=flat-square\&logo=react)](#)
+
+---
+
+## 🚀 Project Overview
+
+**Skill Shoot** is a modern, responsive learning / course landing project built with **Next.js 15 (app router)** and **Tailwind CSS**. It includes common landing-site features like a header with logo/title, navigation, testimonial carousel (Swiper), custom 404 page, and clean UI styling using a three-color palette.
+
+**Live:** [https://skill-shoot-project.vercel.app/](https://skill-shoot-project.vercel.app/)
+
+---
+
+## 🎨 Color Palette
+
+* Primary: `#245D51` (Deep Green)
+* Accent: `#CB8461` (Warm Orange)
+* Surface: `#F2E7DB` (Soft Cream)
+
+---
+
+## 🧩 Tech Stack
+
+* **Next.js 15** (App Router)
+* **React**
+* **Tailwind CSS**
+* **Swiper** (Carousel: Navigation / Pagination / Autoplay)
+* **react-icons** (Fi, Ai used)
+* **Vercel** (Deployment)
+
+---
+
+## ✨ Key Features
+
+* Responsive landing pages and header with logo + title
+* Testimonial carousel using **Swiper** with centered slides, autoplay, pagination and custom navigation
+* Active/inactive card visual states (active card: white bg; inactive cards: transparent + reduced scale)
+* Custom `app/not-found.js` (404) styled with the project color palette
+* Accessible and keyboard-friendly controls
+
+---
+
+## 📁 Project Structure (example)
+
+```
+root/
+├─ app/
+│  ├─ layout.js
+│  ├─ page.js
+│  ├─ not-found.js
+│  └─ components/
+│     ├─ Header.js
+│     └─ ReviewsSwiper.js
+├─ public/
+│  ├─ logo.png
+│  └─ favicon.ico
+├─ styles/
+│  └─ globals.css
+├─ package.json
+└─ tailwind.config.js
+```
+
+---
+
+## 💻 Run Locally
+
+1. **Clone the repository**
+
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+# or
+pnpm install
+# or
+yarn
+```
+
+3. **Start dev server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# opens at http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Build for production**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔧 Notes / Gotchas
 
-To learn more about Next.js, take a look at the following resources:
+* *Favicon & metadata:* Place `logo.png` or `favicon.ico` in `/public` and set `export const metadata = { icons: { icon: '/logo.png' } }` inside `app/layout.js`.
+* *Tailwind custom sizes:* If you use custom sizes like `w-120` or `p-22`, prefer Tailwind arbitrary values (e.g. `w-[420px]`, `p-22` if configured) or add them in `tailwind.config.js`.
+* *External image links:* If an external host blocks hotlinking, host images inside `/public` or use a reliable CDN.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✅ How to push README to GitHub (full process)
 
-## Deploy on Vercel
+1. Create a GitHub repo (name it `skill-shoot` or similar).
+2. If you don't already have a local repo, initialize:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git init
+git add .
+git commit -m "chore: initial commit"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git push -u origin main
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. To update README:
+
+```bash
+# edit README.md locally
+git add README.md
+git commit -m "docs: add README"
+git push
+```
+
+---
+
+## 🛫 Deploy to Vercel (quick)
+
+1. Go to [https://vercel.com/](https://vercel.com/) and sign in.
+2. Import your GitHub repository -> Vercel will detect Next.js
+3. Configure environment variables (if any) and click Deploy.
+4. Your site will be available at `https://<project>.vercel.app` (or a custom domain).
+
+---
+
+## 📸 Screenshots / Demo
+
+*Add some screenshots or an animated GIF here.*
+
+```
+![Homepage](./public/screenshot-home.png)
+![Reviews](./public/screenshot-reviews.png)
+```
+
+---
+
+## 🤝 Contributing
+
+PRs are welcome. Please follow this flow:
+
+1. Fork the repo
+2. Create a branch `feat/short-description`
+3. Commit small changes with clear messages
+4. Make a pull request to `main` with a description
+
+---
+
+## 📬 Contact
+
+Created by **Md Asif** — feel free to reach out via GitHub profile.
+
+---
+
+## ⚖️ License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+*Generated README for Skill Shoot — customize screenshots, repo URL, and any env variables as needed.*
