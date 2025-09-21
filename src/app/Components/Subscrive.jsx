@@ -57,7 +57,7 @@ export default function Subscribe() {
             >
                 {/* Pro Plan */}
                 <motion.div
-                    className="order-1 md:order-2 relative flex flex-col items-start text-left bg-[#245D51] text-white shadow-[#779d76] shadow-lg rounded-3xl p-8 w-full sm:w-96 md:w-80 h-auto min-h-[400px] transform transition duration-300 hover:-translate-y-12 hover:shadow-green-700"
+                    className="order-1 md:order-2 relative flex flex-col items-start text-left bg-[#245D51] text-white shadow-[#779d76] shadow-lg rounded-3xl p-8 w-full sm:w-96 md:w-80 h-auto min-h-[400px] transform transition duration-300 hover:-translate-y-12  -translate-y-9 hover:shadow-green-700"
                     variants={cardVariants}
                 >
                     <span className="absolute left-1/2 top-2 bg-[#CB8461] text-white text-xs px-4 py-1 rounded-full">
