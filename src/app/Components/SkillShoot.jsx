@@ -121,7 +121,7 @@ export default function SkillShoot() {
               <img
                 src="https://i.ibb.co.com/BHFNfFzH/Vector-1.png"
                 alt=""
-                className="absolute left-0 top-1 w-full"
+                className="absolute w-full"
               />
             </span>
           </motion.h1>
