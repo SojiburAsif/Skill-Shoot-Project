@@ -46,7 +46,7 @@ export default function Page() {
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <div className="text-center relative">
-                    <h1 className="text-2xl md:text-4xl  font-semibold">
+                    <h1 className="text-2xl md:text-4xl font-semibold">
                         What do they <span className="text-[#CB8461]">say?</span>
                     </h1>
                     <p className="text-gray-400 mt-2 text-sm w-75 md:w-full mx-auto md:text-lg ">
@@ -60,9 +60,8 @@ export default function Page() {
                     <div className="absolute -top-1 right-5 rounded-full w-6 h-6 bg-[#246859] block md:hidden"></div>
                 </div>
 
-
                 {/* Swiper */}
-                <div className="mt-14 relative">
+                <div className="mt-14 relative mx-8 md:mx-0">
                     <Swiper
                         modules={[Navigation, Pagination, Autoplay]}
                         centeredSlides={true}
@@ -84,12 +83,12 @@ export default function Page() {
                         }}
                     >
                         {reviews.map((r, i) => (
-                            <SwiperSlide key={i}>
+                            <SwiperSlide key={i} className="!flex justify-center items-center  ">
                                 {({ isActive }) => (
                                     <div
-                                        className={`bg-white p-22 w-120  rounded-sm text-center transition-all duration-500 ${isActive
-                                            ? "scale-90  border-b-8 border-[#275a4f]"
-                                            : "scale-65 opacity-70"
+                                        className={`p-22 w-[420px] md:w-[450px] lg:w-[480px] mx-auto rounded-sm text-center transition-all duration-500 border-b-8 ${isActive
+                                                ? "bg-white border-[#275a4f] scale-100"
+                                                : "bg-transparent border-transparent scale-75 opacity-70"
                                             }`}
                                     >
                                         {/* Profile Image */}
@@ -104,18 +103,23 @@ export default function Page() {
                                         {/* Stars */}
                                         <div className="mt-5 flex justify-center gap-1">
                                             {Array.from({ length: 5 }).map((_, idx) => (
-                                                <AiFillStar key={idx} className="text-[#CB8461] w-6 h-6" />
+                                                <AiFillStar key={idx} className={`w-6 h-6 ${isActive ? "text-[#CB8461]" : "text-gray-400"}`} />
                                             ))}
                                         </div>
 
                                         {/* Name */}
-                                        <h3 className="mt-5 text-2xl font-semibold text-gray-800">{r.name}</h3>
+                                        <h3 className={`mt-5 text-2xl font-semibold ${isActive ? "text-gray-800" : "text-gray-600"}`}>
+                                            {r.name}
+                                        </h3>
 
                                         {/* Review Text */}
-                                        <p className="text-gray-500 mt-4 text-lg leading-8">{r.text}</p>
+                                        <p className={`mt-4 text-lg w-67 ${isActive ? "text-gray-500" : "text-gray-400"}`}>
+                                            {r.text}
+                                        </p>
                                     </div>
                                 )}
                             </SwiperSlide>
+
 
                         ))}
                     </Swiper>

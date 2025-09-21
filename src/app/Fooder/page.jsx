@@ -65,7 +65,7 @@ export default function Footer() {
                 {/* Navbar Section (Bottom) */}
                 <div className="flex flex-col-reverse sm:flex-row justify-between items-center w-full mt-12 gap-6">
                     {/* Left Side (Logo) */}
-                    <div className="flex items-center gap-1 text-white font-bold text-xl">
+                    <div className="flex items-center gap-1 text-white font-bold text-2xl">
                         Skill<span className="text-[#CB8461]">Shoot</span>
                     </div>
 

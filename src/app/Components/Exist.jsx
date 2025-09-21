@@ -18,13 +18,13 @@ export default function Exist() {
                     </p>
 
                     {/* Testimonial / CEO Section */}
-                    <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
+                    <div className="flex   items-center gap-4 mt-6">
                         <img
                             src="https://i.ibb.co/DHT6j8f3/55885874d5d9.jpg"
                             alt="Jerony Pulquosta"
                             className="w-16 h-16 rounded-full"
                         />
-                        <div className="text-center sm:text-left">
+                        <div className="text-center  sm:text-left">
                             <h1 className="font-semibold">Jerony Pulquosta</h1>
                             <p className="text-gray-500">CEO Skill Shoot</p>
                         </div>
@@ -33,7 +33,7 @@ export default function Exist() {
                     <hr className="border-t border-gray-300 my-6 w-2/3 md:w-[67%]" />
 
                     {/* Stats Section */}
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 mt-4 text-center sm:text-left">
+                    <div className="flex  gap-4 sm:gap-10 mt-4 text-center sm:text-left">
                         <div>
                             <h1 className="font-bold text-3xl">100+</h1>
                             <p className="text-gray-600 text-sm">Updated Courses</p>

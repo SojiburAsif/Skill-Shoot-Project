@@ -75,10 +75,10 @@ export default function PopularCourses() {
                 </p>
             </div>
 
-            <div className="absolute top-15 left-20 w-10 h-10 bg-[#CB8461] rotate-12 hidden md:block"></div>
-            <div className="absolute top-17 left-17 w-10 h-10 border-2 border-[#CB8461] rotate-12 hidden md:block"></div>
-            <div className="absolute top-24 right-20 rounded-full w-5 h-5 bg-[#EB9F79] hidden md:block"></div>
-            <div className="absolute top-21 right-21 rounded-full w-7 h-7 bg-[#e28252] hidden md:block"></div>
+            <div className="absolute top-15 left-130 w-10 h-10 bg-[#CB8461] rotate-12 hidden md:block"></div>
+            <div className="absolute top-17 left-127 w-10 h-10 border-2 border-[#CB8461] rotate-12 hidden md:block"></div>
+            <div className="absolute top-24 right-120 rounded-full w-5 h-5 bg-[#EB9F79] hidden md:block"></div>
+            <div className="absolute top-21 right-121 rounded-full w-7 h-7 bg-[#e28252] hidden md:block"></div>
 
 
             {/* Swiper */}
@@ -158,14 +158,18 @@ export default function PopularCourses() {
 
                 {/* Custom Navigation */}
                 <div className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 z-10">
-                    <button className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100">
-                        <FaArrowLeft className="text-[#245D51]" />
-                    </button>
+                    <div className="bg-gray-200 rounded-full p-1">
+                        <button className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100">
+                            <FaArrowLeft className="text-[#245D51]" />
+                        </button>
+                    </div>
                 </div>
                 <div className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 z-10">
-                    <button className="w-10 h-10 bg-[#245D51] rounded-full flex items-center justify-center shadow-md ">
-                        <FaArrowRight className="text-white" />
-                    </button>
+                    <div className="bg-white p-1 rounded-full">
+                        <button className="w-10 h-10 bg-[#245D51] rounded-full flex items-center justify-center shadow-md ">
+                            <FaArrowRight className="text-white" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

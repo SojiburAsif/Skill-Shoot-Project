@@ -7,7 +7,7 @@ export default function Company() {
 
                 {/* Heading */}
                 <div className="text-center md:text-center">
-                    <h1 className="text-4xl font-semibold">
+                    <h1 className="md:text-4xl text-xl font-semibold">
                         Trusted more than <span className="text-[#CB8461]">100+</span> in the world
                     </h1>
                     <p className="text-gray-600 mt-3 w-77 md:w-119 mx-auto">

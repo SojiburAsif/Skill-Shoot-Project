@@ -44,7 +44,7 @@ export default function Header() {
                 <div className="navbar-end lg:hidden">
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost">
-                            <IoAppsSharp size={28} className="text-[#ffffff]" />
+                            <img src="https://i.ibb.co.com/GQc7jHVV/Vector.png" alt="" />
                         </div>
                         <ul
                             tabIndex={0}

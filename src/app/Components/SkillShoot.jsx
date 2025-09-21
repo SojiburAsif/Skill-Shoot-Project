@@ -30,11 +30,11 @@ export default function SkillShoot() {
                         <FaRegCalendarAlt />
                     </div>
 
-                    <div className="absolute -top-14 left-[58%] md:left-[75%] w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-lg shadow-lg z-30 -rotate-12">
+                    <div className="absolute -top-14 left-[58%] md:left-[75%] w-10 h-10 bg-[#F88C3D] text-white flex items-center justify-center rounded-lg shadow-lg z-30 -rotate-12">
                         <FaPencilAlt />
                     </div>
 
-                    <div className="absolute top-[56%] md:top-0 -left-8 md:left-24 w-10 h-10 bg-purple-500 text-white flex items-center justify-center rounded-lg shadow-lg z-30">
+                    <div className="absolute top-[56%] md:top-0 -left-8 md:left-24 w-10 h-10 bg-[#7252A4] text-white flex items-center justify-center rounded-lg shadow-lg z-30">
                         <FaPlay />
                     </div>
 
@@ -66,7 +66,7 @@ export default function SkillShoot() {
                 {/* RIGHT - text area (50%) */}
                 <div className="w-full md:w-1/2 max-w-xl">
                     <h1 className="text-4xl font-bold">
-                        Let us <span className="text-[#245D51]">Skill Shoot</span>
+                        Let us <span className="text-[#245D51] underline">Skill Shoot </span>
                     </h1>
 
                     <p className="text-gray-500 mt-4 leading-relaxed">
