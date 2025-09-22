@@ -19,13 +19,21 @@
 **Skill Shoot** is a modern, responsive learning / course landing project built with **Next.js 15 (app router)** and **Tailwind CSS**. It includes a **basic landing page** layout with header, footer, and multiple sections:
 
 🏠 Header: Logo + Navigation (Home, Course, Subscribe, About, Testimoni)
+
 🎯 Hero Banner: Animated call-to-action with motion effects
+
 🎁 Offers Section: Highlighted deals with hover/motion animations
+
 ⭐ Features (Exist): Why choose us, displayed with animated cards
+
 🔥 Popular SkillShoot: Showcasing trending skills/courses
+
 🚀 Improve Section: How users can improve skills with benefits
+
 💌 Subscribe Page: Newsletter & subscription plans
+
 👥 Testimonials: Swiper.js carousel with motion transitions
+
 📞 Footer: Contact info, social links,
 
 **Live:** [https://skill-shoot-project.vercel.app/](https://skill-shoot-project.vercel.app/)
