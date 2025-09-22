@@ -4,11 +4,13 @@
 
 ---
 
-[![Deployment](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge\&logo=vercel)](https://skill-shoot-project.vercel.app/)
-[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat-square\&logo=next.js)](#)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square\&logo=tailwindcss)](#)
+[![Deployment](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel)](https://skill-shoot-project.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=next.js)](#)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwindcss)](#)
 [![Swiper](https://img.shields.io/badge/Swiper-Carousel-007ACC?style=flat-square)](#)
-[![React Icons](https://img.shields.io/badge/React--Icons-20232A?style=flat-square\&logo=react)](#)
+[![React Icons](https://img.shields.io/badge/React--Icons-20232A?style=flat-square&logo=react)](#)
+[![Framer Motion](https://img.shields.io/badge/Framer--Motion-0055FF?style=flat-square&logo=framer)](#)
+
 
 ---
 
@@ -16,14 +18,15 @@
 
 **Skill Shoot** is a modern, responsive learning / course landing project built with **Next.js 15 (app router)** and **Tailwind CSS**. It includes a **basic landing page** layout with header, footer, and multiple sections:
 
-* **Header**: Logo, Navigation (Home, Course, Subscribe, About, Testimoni)
-* **Banner**: Hero section with CTA
-* **Offers**: Highlighted offers or deals
-* **Exist**: Features or why choose us
-* **Popular SkillShoot**: Highlight popular courses or skills
-* **Improve**: Benefits or skill improvement info
-* **Subscribe Page**: Newsletter or subscription plans
-* **Footer**: Contact info, social links, copyright
+🏠 Header: Logo + Navigation (Home, Course, Subscribe, About, Testimoni)
+🎯 Hero Banner: Animated call-to-action with motion effects
+🎁 Offers Section: Highlighted deals with hover/motion animations
+⭐ Features (Exist): Why choose us, displayed with animated cards
+🔥 Popular SkillShoot: Showcasing trending skills/courses
+🚀 Improve Section: How users can improve skills with benefits
+💌 Subscribe Page: Newsletter & subscription plans
+👥 Testimonials: Swiper.js carousel with motion transitions
+📞 Footer: Contact info, social links,
 
 **Live:** [https://skill-shoot-project.vercel.app/](https://skill-shoot-project.vercel.app/)
 
@@ -37,14 +40,15 @@
 
 ---
 
-## 🧩 Tech Stack
+##🧑‍💻 Tech Stack
 
-* **Next.js 15** (App Router)
-* **React**
-* **Tailwind CSS**
-* **Swiper** (Carousel: Navigation / Pagination / Autoplay)
-* **react-icons** (Fi, Ai used)
-* **Vercel** (Deployment)
+⚡ Next.js 15 (App Router)
+⚛️ React
+🎨 Tailwind CSS
+🌀 Swiper.js (Responsive carousel)
+🎭 Framer Motion (Animations & transitions)
+🎯 React Icons (Iconography)
+▲ Vercel (Deployment)
 
 ---
 
@@ -165,10 +169,6 @@ Email: asif81534@gmail.com
 
 ---
 
-## ⚖️ License
 
-This project is open-source under the **MIT License**.
-
----
 
 *Generated README for Skill Shoot — update screenshots, repo URL, and components list as you develop further.*
