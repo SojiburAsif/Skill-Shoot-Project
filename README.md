@@ -51,11 +51,17 @@
 ##🧑‍💻 Tech Stack
 
 ⚡ Next.js 15 (App Router)
+
 ⚛️ React
+
 🎨 Tailwind CSS
+
 🌀 Swiper.js (Responsive carousel)
+
 🎭 Framer Motion (Animations & transitions)
+
 🎯 React Icons (Iconography)
+
 ▲ Vercel (Deployment)
 
 ---
